@@ -1,0 +1,418 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		379B8E4014C50FB600797170 /* liblbfgs.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs.dylib */; };
+		379B8E4314C5292C00797170 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4214C5292C00797170 /* config.h */; };
+		379B8E4814C5296B00797170 /* crfsuite_api.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4414C5296B00797170 /* crfsuite_api.hpp */; };
+		379B8E4914C5296B00797170 /* crfsuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4514C5296B00797170 /* crfsuite.h */; };
+		379B8E4A14C5296B00797170 /* crfsuite.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4614C5296B00797170 /* crfsuite.hpp */; };
+		379B8E4B14C5296B00797170 /* os.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4714C5296B00797170 /* os.h */; };
+		379B8E6614C5299200797170 /* crf1d_context.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E4C14C5299200797170 /* crf1d_context.c */; };
+		379B8E6714C5299200797170 /* crf1d_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E4D14C5299200797170 /* crf1d_encode.c */; };
+		379B8E6814C5299200797170 /* crf1d_feature.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E4E14C5299200797170 /* crf1d_feature.c */; };
+		379B8E6914C5299200797170 /* crf1d_model.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E4F14C5299200797170 /* crf1d_model.c */; };
+		379B8E6A14C5299200797170 /* crf1d_tag.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E5014C5299200797170 /* crf1d_tag.c */; };
+		379B8E6B14C5299200797170 /* crf1d.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E5114C5299200797170 /* crf1d.h */; };
+		379B8E6C14C5299200797170 /* crfsuite_internal.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E5214C5299200797170 /* crfsuite_internal.h */; };
+		379B8E6D14C5299200797170 /* crfsuite_train.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E5314C5299200797170 /* crfsuite_train.c */; };
+		379B8E6E14C5299200797170 /* crfsuite.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E5414C5299200797170 /* crfsuite.c */; };
+		379B8E6F14C5299200797170 /* dataset.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E5514C5299200797170 /* dataset.c */; };
+		379B8E7014C5299200797170 /* dictionary.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E5614C5299200797170 /* dictionary.c */; };
+		379B8E7114C5299200797170 /* holdout.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E5714C5299200797170 /* holdout.c */; };
+		379B8E7214C5299200797170 /* logging.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E5814C5299200797170 /* logging.c */; };
+		379B8E7314C5299200797170 /* logging.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E5914C5299200797170 /* logging.h */; };
+		379B8E7414C5299200797170 /* params.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E5A14C5299200797170 /* params.c */; };
+		379B8E7514C5299200797170 /* params.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E5B14C5299200797170 /* params.h */; };
+		379B8E7614C5299200797170 /* quark.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E5C14C5299200797170 /* quark.c */; };
+		379B8E7714C5299200797170 /* quark.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E5D14C5299200797170 /* quark.h */; };
+		379B8E7814C5299200797170 /* rumavl.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E5E14C5299200797170 /* rumavl.c */; };
+		379B8E7914C5299200797170 /* rumavl.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E5F14C5299200797170 /* rumavl.h */; };
+		379B8E7A14C5299200797170 /* train_arow.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E6014C5299200797170 /* train_arow.c */; };
+		379B8E7B14C5299200797170 /* train_averaged_perceptron.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E6114C5299200797170 /* train_averaged_perceptron.c */; };
+		379B8E7C14C5299200797170 /* train_l2sgd.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E6214C5299200797170 /* train_l2sgd.c */; };
+		379B8E7D14C5299200797170 /* train_lbfgs.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E6314C5299200797170 /* train_lbfgs.c */; };
+		379B8E7E14C5299200797170 /* train_passive_aggressive.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E6414C5299200797170 /* train_passive_aggressive.c */; };
+		379B8E7F14C5299200797170 /* vecmath.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E6514C5299200797170 /* vecmath.h */; };
+		379B8E8414C52A6800797170 /* cqdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E8114C52A6800797170 /* cqdb.c */; };
+		379B8E8514C52A6800797170 /* lookup3.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E8214C52A6800797170 /* lookup3.c */; };
+		379B8E8814C52A7000797170 /* cqdb.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E8714C52A7000797170 /* cqdb.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3702222E14C50EFA00052F88 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3702222714C50EFA00052F88 /* liblbfgs.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 370221FA14C504FF00052F88;
+			remoteInfo = lbfgs;
+		};
+		379B8E3E14C50FB300797170 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3702222714C50EFA00052F88 /* liblbfgs.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 370221F914C504FF00052F88;
+			remoteInfo = lbfgs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3702222014C50EEA00052F88 /* libcrfsuite.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcrfsuite.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3702222714C50EFA00052F88 /* liblbfgs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = liblbfgs.xcodeproj; path = ../liblbfgs/liblbfgs.xcodeproj; sourceTree = "<group>"; };
+		379B8E4214C5292C00797170 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
+		379B8E4414C5296B00797170 /* crfsuite_api.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = crfsuite_api.hpp; path = include/crfsuite_api.hpp; sourceTree = "<group>"; };
+		379B8E4514C5296B00797170 /* crfsuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crfsuite.h; path = include/crfsuite.h; sourceTree = "<group>"; };
+		379B8E4614C5296B00797170 /* crfsuite.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = crfsuite.hpp; path = include/crfsuite.hpp; sourceTree = "<group>"; };
+		379B8E4714C5296B00797170 /* os.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = os.h; path = include/os.h; sourceTree = "<group>"; };
+		379B8E4C14C5299200797170 /* crf1d_context.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crf1d_context.c; path = lib/crf/src/crf1d_context.c; sourceTree = "<group>"; };
+		379B8E4D14C5299200797170 /* crf1d_encode.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crf1d_encode.c; path = lib/crf/src/crf1d_encode.c; sourceTree = "<group>"; };
+		379B8E4E14C5299200797170 /* crf1d_feature.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crf1d_feature.c; path = lib/crf/src/crf1d_feature.c; sourceTree = "<group>"; };
+		379B8E4F14C5299200797170 /* crf1d_model.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crf1d_model.c; path = lib/crf/src/crf1d_model.c; sourceTree = "<group>"; };
+		379B8E5014C5299200797170 /* crf1d_tag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crf1d_tag.c; path = lib/crf/src/crf1d_tag.c; sourceTree = "<group>"; };
+		379B8E5114C5299200797170 /* crf1d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crf1d.h; path = lib/crf/src/crf1d.h; sourceTree = "<group>"; };
+		379B8E5214C5299200797170 /* crfsuite_internal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crfsuite_internal.h; path = lib/crf/src/crfsuite_internal.h; sourceTree = "<group>"; };
+		379B8E5314C5299200797170 /* crfsuite_train.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crfsuite_train.c; path = lib/crf/src/crfsuite_train.c; sourceTree = "<group>"; };
+		379B8E5414C5299200797170 /* crfsuite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crfsuite.c; path = lib/crf/src/crfsuite.c; sourceTree = "<group>"; };
+		379B8E5514C5299200797170 /* dataset.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dataset.c; path = lib/crf/src/dataset.c; sourceTree = "<group>"; };
+		379B8E5614C5299200797170 /* dictionary.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dictionary.c; path = lib/crf/src/dictionary.c; sourceTree = "<group>"; };
+		379B8E5714C5299200797170 /* holdout.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = holdout.c; path = lib/crf/src/holdout.c; sourceTree = "<group>"; };
+		379B8E5814C5299200797170 /* logging.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = logging.c; path = lib/crf/src/logging.c; sourceTree = "<group>"; };
+		379B8E5914C5299200797170 /* logging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = logging.h; path = lib/crf/src/logging.h; sourceTree = "<group>"; };
+		379B8E5A14C5299200797170 /* params.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = params.c; path = lib/crf/src/params.c; sourceTree = "<group>"; };
+		379B8E5B14C5299200797170 /* params.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = params.h; path = lib/crf/src/params.h; sourceTree = "<group>"; };
+		379B8E5C14C5299200797170 /* quark.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = quark.c; path = lib/crf/src/quark.c; sourceTree = "<group>"; };
+		379B8E5D14C5299200797170 /* quark.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = quark.h; path = lib/crf/src/quark.h; sourceTree = "<group>"; };
+		379B8E5E14C5299200797170 /* rumavl.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = rumavl.c; path = lib/crf/src/rumavl.c; sourceTree = "<group>"; };
+		379B8E5F14C5299200797170 /* rumavl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rumavl.h; path = lib/crf/src/rumavl.h; sourceTree = "<group>"; };
+		379B8E6014C5299200797170 /* train_arow.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = train_arow.c; path = lib/crf/src/train_arow.c; sourceTree = "<group>"; };
+		379B8E6114C5299200797170 /* train_averaged_perceptron.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = train_averaged_perceptron.c; path = lib/crf/src/train_averaged_perceptron.c; sourceTree = "<group>"; };
+		379B8E6214C5299200797170 /* train_l2sgd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = train_l2sgd.c; path = lib/crf/src/train_l2sgd.c; sourceTree = "<group>"; };
+		379B8E6314C5299200797170 /* train_lbfgs.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = train_lbfgs.c; path = lib/crf/src/train_lbfgs.c; sourceTree = "<group>"; };
+		379B8E6414C5299200797170 /* train_passive_aggressive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = train_passive_aggressive.c; path = lib/crf/src/train_passive_aggressive.c; sourceTree = "<group>"; };
+		379B8E6514C5299200797170 /* vecmath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vecmath.h; path = lib/crf/src/vecmath.h; sourceTree = "<group>"; };
+		379B8E8114C52A6800797170 /* cqdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cqdb.c; path = lib/cqdb/src/cqdb.c; sourceTree = "<group>"; };
+		379B8E8214C52A6800797170 /* lookup3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lookup3.c; path = lib/cqdb/src/lookup3.c; sourceTree = "<group>"; };
+		379B8E8714C52A7000797170 /* cqdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cqdb.h; path = lib/cqdb/include/cqdb.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3702221D14C50EEA00052F88 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379B8E4014C50FB600797170 /* liblbfgs.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3702221014C50ECF00052F88 = {
+			isa = PBXGroup;
+			children = (
+				3702222714C50EFA00052F88 /* liblbfgs.xcodeproj */,
+				3702222614C50EF100052F88 /* Source */,
+				3702222114C50EEA00052F88 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3702222114C50EEA00052F88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3702222014C50EEA00052F88 /* libcrfsuite.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3702222614C50EF100052F88 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				379B8E8014C52A6100797170 /* cqdb */,
+				379B8E4214C5292C00797170 /* config.h */,
+				379B8E4414C5296B00797170 /* crfsuite_api.hpp */,
+				379B8E4514C5296B00797170 /* crfsuite.h */,
+				379B8E4614C5296B00797170 /* crfsuite.hpp */,
+				379B8E4714C5296B00797170 /* os.h */,
+				379B8E4C14C5299200797170 /* crf1d_context.c */,
+				379B8E4D14C5299200797170 /* crf1d_encode.c */,
+				379B8E4E14C5299200797170 /* crf1d_feature.c */,
+				379B8E4F14C5299200797170 /* crf1d_model.c */,
+				379B8E5014C5299200797170 /* crf1d_tag.c */,
+				379B8E5114C5299200797170 /* crf1d.h */,
+				379B8E5214C5299200797170 /* crfsuite_internal.h */,
+				379B8E5314C5299200797170 /* crfsuite_train.c */,
+				379B8E5414C5299200797170 /* crfsuite.c */,
+				379B8E5514C5299200797170 /* dataset.c */,
+				379B8E5614C5299200797170 /* dictionary.c */,
+				379B8E5714C5299200797170 /* holdout.c */,
+				379B8E5814C5299200797170 /* logging.c */,
+				379B8E5914C5299200797170 /* logging.h */,
+				379B8E5A14C5299200797170 /* params.c */,
+				379B8E5B14C5299200797170 /* params.h */,
+				379B8E5C14C5299200797170 /* quark.c */,
+				379B8E5D14C5299200797170 /* quark.h */,
+				379B8E5E14C5299200797170 /* rumavl.c */,
+				379B8E5F14C5299200797170 /* rumavl.h */,
+				379B8E6014C5299200797170 /* train_arow.c */,
+				379B8E6114C5299200797170 /* train_averaged_perceptron.c */,
+				379B8E6214C5299200797170 /* train_l2sgd.c */,
+				379B8E6314C5299200797170 /* train_lbfgs.c */,
+				379B8E6414C5299200797170 /* train_passive_aggressive.c */,
+				379B8E6514C5299200797170 /* vecmath.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		3702222814C50EFA00052F88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3702222F14C50EFA00052F88 /* liblbfgs.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		379B8E8014C52A6100797170 /* cqdb */ = {
+			isa = PBXGroup;
+			children = (
+				379B8E8714C52A7000797170 /* cqdb.h */,
+				379B8E8114C52A6800797170 /* cqdb.c */,
+				379B8E8214C52A6800797170 /* lookup3.c */,
+			);
+			name = cqdb;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		3702221E14C50EEA00052F88 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379B8E4314C5292C00797170 /* config.h in Headers */,
+				379B8E4814C5296B00797170 /* crfsuite_api.hpp in Headers */,
+				379B8E4914C5296B00797170 /* crfsuite.h in Headers */,
+				379B8E4A14C5296B00797170 /* crfsuite.hpp in Headers */,
+				379B8E4B14C5296B00797170 /* os.h in Headers */,
+				379B8E6B14C5299200797170 /* crf1d.h in Headers */,
+				379B8E6C14C5299200797170 /* crfsuite_internal.h in Headers */,
+				379B8E7314C5299200797170 /* logging.h in Headers */,
+				379B8E7514C5299200797170 /* params.h in Headers */,
+				379B8E7714C5299200797170 /* quark.h in Headers */,
+				379B8E7914C5299200797170 /* rumavl.h in Headers */,
+				379B8E7F14C5299200797170 /* vecmath.h in Headers */,
+				379B8E8814C52A7000797170 /* cqdb.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		3702221F14C50EEA00052F88 /* crfsuite */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3702222414C50EEA00052F88 /* Build configuration list for PBXNativeTarget "crfsuite" */;
+			buildPhases = (
+				379B8E3D14C50F5D00797170 /* Run Configure Script */,
+				3702221C14C50EEA00052F88 /* Sources */,
+				3702221D14C50EEA00052F88 /* Frameworks */,
+				3702221E14C50EEA00052F88 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				379B8E3F14C50FB300797170 /* PBXTargetDependency */,
+			);
+			name = crfsuite;
+			productName = crfsuite;
+			productReference = 3702222014C50EEA00052F88 /* libcrfsuite.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3702221214C50ECF00052F88 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0420;
+			};
+			buildConfigurationList = 3702221514C50ECF00052F88 /* Build configuration list for PBXProject "crfsuite" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 3702221014C50ECF00052F88;
+			productRefGroup = 3702222114C50EEA00052F88 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3702222814C50EFA00052F88 /* Products */;
+					ProjectRef = 3702222714C50EFA00052F88 /* liblbfgs.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3702221F14C50EEA00052F88 /* crfsuite */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3702222F14C50EFA00052F88 /* liblbfgs.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = liblbfgs.dylib;
+			remoteRef = 3702222E14C50EFA00052F88 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		379B8E3D14C50F5D00797170 /* Run Configure Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Configure Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "sh \"$SRCROOT\"/autogen.sh > /dev/null 2>&1\nCFLAGS='-L$TARGET_BUILD_DIR' \"$SRCROOT\"/configure";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3702221C14C50EEA00052F88 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				379B8E6614C5299200797170 /* crf1d_context.c in Sources */,
+				379B8E6714C5299200797170 /* crf1d_encode.c in Sources */,
+				379B8E6814C5299200797170 /* crf1d_feature.c in Sources */,
+				379B8E6914C5299200797170 /* crf1d_model.c in Sources */,
+				379B8E6A14C5299200797170 /* crf1d_tag.c in Sources */,
+				379B8E6D14C5299200797170 /* crfsuite_train.c in Sources */,
+				379B8E6E14C5299200797170 /* crfsuite.c in Sources */,
+				379B8E6F14C5299200797170 /* dataset.c in Sources */,
+				379B8E7014C5299200797170 /* dictionary.c in Sources */,
+				379B8E7114C5299200797170 /* holdout.c in Sources */,
+				379B8E7214C5299200797170 /* logging.c in Sources */,
+				379B8E7414C5299200797170 /* params.c in Sources */,
+				379B8E7614C5299200797170 /* quark.c in Sources */,
+				379B8E7814C5299200797170 /* rumavl.c in Sources */,
+				379B8E7A14C5299200797170 /* train_arow.c in Sources */,
+				379B8E7B14C5299200797170 /* train_averaged_perceptron.c in Sources */,
+				379B8E7C14C5299200797170 /* train_l2sgd.c in Sources */,
+				379B8E7D14C5299200797170 /* train_lbfgs.c in Sources */,
+				379B8E7E14C5299200797170 /* train_passive_aggressive.c in Sources */,
+				379B8E8414C52A6800797170 /* cqdb.c in Sources */,
+				379B8E8514C52A6800797170 /* lookup3.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		379B8E3F14C50FB300797170 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = lbfgs;
+			targetProxy = 379B8E3E14C50FB300797170 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		3702221714C50ECF00052F88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		3702221814C50ECF00052F88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		3702222214C50EEA00052F88 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3702222314C50EEA00052F88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3702221514C50ECF00052F88 /* Build configuration list for PBXProject "crfsuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3702221714C50ECF00052F88 /* Debug */,
+				3702221814C50ECF00052F88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3702222414C50EEA00052F88 /* Build configuration list for PBXNativeTarget "crfsuite" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3702222214C50EEA00052F88 /* Debug */,
+				3702222314C50EEA00052F88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3702221214C50ECF00052F88 /* Project object */;
+}
