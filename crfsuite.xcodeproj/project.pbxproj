@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		379B8E4014C50FB600797170 /* liblbfgs.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs.dylib */; };
+		379B8E4014C50FB600797170 /* liblbfgs-1.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs-1.1.0.dylib */; };
 		379B8E4314C5292C00797170 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4214C5292C00797170 /* config.h */; };
 		379B8E4814C5296B00797170 /* crfsuite_api.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4414C5296B00797170 /* crfsuite_api.hpp */; };
 		379B8E4914C5296B00797170 /* crfsuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4514C5296B00797170 /* crfsuite.h */; };
@@ -62,7 +62,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		3702222014C50EEA00052F88 /* libcrfsuite.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libcrfsuite.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		3702222014C50EEA00052F88 /* libcrfsuite-0.12.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libcrfsuite-0.12.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3702222714C50EFA00052F88 /* liblbfgs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = liblbfgs.xcodeproj; path = ../liblbfgs/liblbfgs.xcodeproj; sourceTree = "<group>"; };
 		379B8E4214C5292C00797170 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		379B8E4414C5296B00797170 /* crfsuite_api.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = crfsuite_api.hpp; path = include/crfsuite_api.hpp; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				379B8E4014C50FB600797170 /* liblbfgs.dylib in Frameworks */,
+				379B8E4014C50FB600797170 /* liblbfgs-1.1.0.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +124,7 @@
 		3702222114C50EEA00052F88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3702222014C50EEA00052F88 /* libcrfsuite.dylib */,
+				3702222014C50EEA00052F88 /* libcrfsuite-0.12.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -171,7 +171,7 @@
 		3702222814C50EFA00052F88 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				3702222F14C50EFA00052F88 /* liblbfgs.dylib */,
+				3702222F14C50EFA00052F88 /* liblbfgs-1.1.0.dylib */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -228,7 +228,7 @@
 			);
 			name = crfsuite;
 			productName = crfsuite;
-			productReference = 3702222014C50EEA00052F88 /* libcrfsuite.dylib */;
+			productReference = 3702222014C50EEA00052F88 /* libcrfsuite-0.12.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
 		};
 /* End PBXNativeTarget section */
@@ -263,10 +263,10 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3702222F14C50EFA00052F88 /* liblbfgs.dylib */ = {
+		3702222F14C50EFA00052F88 /* liblbfgs-1.1.0.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
-			path = liblbfgs.dylib;
+			path = "liblbfgs-1.1.0.dylib";
 			remoteRef = 3702222E14C50EFA00052F88 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -285,7 +285,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "sh \"$SRCROOT\"/autogen.sh > /dev/null 2>&1\nCFLAGS='-L$TARGET_BUILD_DIR' \"$SRCROOT\"/configure";
+			shellScript = "if [ ! -f configure ]; then \n  sh \"$SRCROOT\"/autogen.sh > /dev/null 2>&1\nfi \n\nif [ ! -f \"$SRCROOT\"/config.h ]; then\n  CFLAGS='-L$TARGET_BUILD_DIR' \"$SRCROOT\"/configure\nfi";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -348,6 +348,8 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = NO;
+				DYLIB_COMPATIBILITY_VERSION = 0.1.2;
+				DYLIB_CURRENT_VERSION = 0.1.2;
 				EXECUTABLE_PREFIX = lib;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -363,9 +365,10 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@loader_path";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)-0.12";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -377,6 +380,8 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DYLIB_COMPATIBILITY_VERSION = 0.1.2;
+				DYLIB_CURRENT_VERSION = 0.1.2;
 				EXECUTABLE_PREFIX = lib;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
@@ -385,8 +390,9 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INSTALL_PATH = "@loader_path";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "$(TARGET_NAME)-0.12";
 				SDKROOT = macosx;
 			};
 			name = Release;
