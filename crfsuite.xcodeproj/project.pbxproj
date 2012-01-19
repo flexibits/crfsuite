@@ -7,7 +7,26 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		379B8E4014C50FB600797170 /* liblbfgs-1.1.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs-1.1.0.dylib */; };
+		3745F27614C8A80000007C3C /* dump.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F26C14C8A80000007C3C /* dump.c */; };
+		3745F27714C8A80000007C3C /* iwa.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F26D14C8A80000007C3C /* iwa.c */; };
+		3745F27814C8A80000007C3C /* iwa.h in Headers */ = {isa = PBXBuildFile; fileRef = 3745F26E14C8A80000007C3C /* iwa.h */; };
+		3745F27914C8A80000007C3C /* learn.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F26F14C8A80000007C3C /* learn.c */; };
+		3745F27A14C8A80000007C3C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F27014C8A80000007C3C /* main.c */; };
+		3745F27B14C8A80000007C3C /* option.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F27114C8A80000007C3C /* option.c */; };
+		3745F27C14C8A80000007C3C /* option.h in Headers */ = {isa = PBXBuildFile; fileRef = 3745F27214C8A80000007C3C /* option.h */; };
+		3745F27D14C8A80000007C3C /* readdata.h in Headers */ = {isa = PBXBuildFile; fileRef = 3745F27314C8A80000007C3C /* readdata.h */; };
+		3745F27E14C8A80000007C3C /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F27414C8A80000007C3C /* reader.c */; };
+		3745F27F14C8A80000007C3C /* tag.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F27514C8A80000007C3C /* tag.c */; };
+		3745F29014C8A8DA00007C3C /* dump.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F26C14C8A80000007C3C /* dump.c */; };
+		3745F29114C8A8DA00007C3C /* iwa.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F26D14C8A80000007C3C /* iwa.c */; };
+		3745F29314C8A8DA00007C3C /* learn.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F26F14C8A80000007C3C /* learn.c */; };
+		3745F29414C8A8DA00007C3C /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F27014C8A80000007C3C /* main.c */; };
+		3745F29514C8A8DA00007C3C /* option.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F27114C8A80000007C3C /* option.c */; };
+		3745F29814C8A8DA00007C3C /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F27414C8A80000007C3C /* reader.c */; };
+		3745F29914C8A8DA00007C3C /* tag.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F27514C8A80000007C3C /* tag.c */; };
+		3745F29A14C8A8E300007C3C /* libcrfsuite-0.12.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222014C50EEA00052F88 /* libcrfsuite-0.12.dylib */; };
+		3745F29B14C8A8E700007C3C /* liblbfgs-1.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs-1.10.dylib */; };
+		379B8E4014C50FB600797170 /* liblbfgs-1.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs-1.10.dylib */; };
 		379B8E4314C5292C00797170 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4214C5292C00797170 /* config.h */; };
 		379B8E4814C5296B00797170 /* crfsuite_api.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4414C5296B00797170 /* crfsuite_api.hpp */; };
 		379B8E4914C5296B00797170 /* crfsuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4514C5296B00797170 /* crfsuite.h */; };
@@ -52,6 +71,13 @@
 			remoteGlobalIDString = 370221FA14C504FF00052F88;
 			remoteInfo = lbfgs;
 		};
+		3745F28E14C8A8D400007C3C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3702221214C50ECF00052F88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3702221F14C50EEA00052F88;
+			remoteInfo = libcrfsuite;
+		};
 		379B8E3E14C50FB300797170 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3702222714C50EFA00052F88 /* liblbfgs.xcodeproj */;
@@ -61,9 +87,32 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		3745F28214C8A8C400007C3C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		3702222014C50EEA00052F88 /* libcrfsuite-0.12.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libcrfsuite-0.12.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3702222714C50EFA00052F88 /* liblbfgs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = liblbfgs.xcodeproj; path = ../liblbfgs/liblbfgs.xcodeproj; sourceTree = "<group>"; };
+		3745F26C14C8A80000007C3C /* dump.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = dump.c; path = frontend/dump.c; sourceTree = "<group>"; };
+		3745F26D14C8A80000007C3C /* iwa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = iwa.c; path = frontend/iwa.c; sourceTree = "<group>"; };
+		3745F26E14C8A80000007C3C /* iwa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = iwa.h; path = frontend/iwa.h; sourceTree = "<group>"; };
+		3745F26F14C8A80000007C3C /* learn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = learn.c; path = frontend/learn.c; sourceTree = "<group>"; };
+		3745F27014C8A80000007C3C /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = main.c; path = frontend/main.c; sourceTree = "<group>"; };
+		3745F27114C8A80000007C3C /* option.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = option.c; path = frontend/option.c; sourceTree = "<group>"; };
+		3745F27214C8A80000007C3C /* option.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = option.h; path = frontend/option.h; sourceTree = "<group>"; };
+		3745F27314C8A80000007C3C /* readdata.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = readdata.h; path = frontend/readdata.h; sourceTree = "<group>"; };
+		3745F27414C8A80000007C3C /* reader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = reader.c; path = frontend/reader.c; sourceTree = "<group>"; };
+		3745F27514C8A80000007C3C /* tag.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = tag.c; path = frontend/tag.c; sourceTree = "<group>"; };
+		3745F28414C8A8C400007C3C /* crfsuite */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = crfsuite; sourceTree = BUILT_PRODUCTS_DIR; };
 		379B8E4214C5292C00797170 /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = config.h; sourceTree = "<group>"; };
 		379B8E4414C5296B00797170 /* crfsuite_api.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = crfsuite_api.hpp; path = include/crfsuite_api.hpp; sourceTree = "<group>"; };
 		379B8E4514C5296B00797170 /* crfsuite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crfsuite.h; path = include/crfsuite.h; sourceTree = "<group>"; };
@@ -105,7 +154,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				379B8E4014C50FB600797170 /* liblbfgs-1.1.0.dylib in Frameworks */,
+				379B8E4014C50FB600797170 /* liblbfgs-1.10.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3745F28114C8A8C400007C3C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3745F29A14C8A8E300007C3C /* libcrfsuite-0.12.dylib in Frameworks */,
+				3745F29B14C8A8E700007C3C /* liblbfgs-1.10.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +183,7 @@
 			isa = PBXGroup;
 			children = (
 				3702222014C50EEA00052F88 /* libcrfsuite-0.12.dylib */,
+				3745F28414C8A8C400007C3C /* crfsuite */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,12 +191,28 @@
 		3702222614C50EF100052F88 /* Source */ = {
 			isa = PBXGroup;
 			children = (
-				379B8E8014C52A6100797170 /* cqdb */,
+				3745F26B14C8A7E000007C3C /* frontend */,
+				3745F26A14C8A7D800007C3C /* lib */,
 				379B8E4214C5292C00797170 /* config.h */,
 				379B8E4414C5296B00797170 /* crfsuite_api.hpp */,
 				379B8E4514C5296B00797170 /* crfsuite.h */,
 				379B8E4614C5296B00797170 /* crfsuite.hpp */,
 				379B8E4714C5296B00797170 /* os.h */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		3702222814C50EFA00052F88 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3702222F14C50EFA00052F88 /* liblbfgs-1.10.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3745F26914C8A7BA00007C3C /* crf */ = {
+			isa = PBXGroup;
+			children = (
 				379B8E4C14C5299200797170 /* crf1d_context.c */,
 				379B8E4D14C5299200797170 /* crf1d_encode.c */,
 				379B8E4E14C5299200797170 /* crf1d_feature.c */,
@@ -165,15 +240,33 @@
 				379B8E6414C5299200797170 /* train_passive_aggressive.c */,
 				379B8E6514C5299200797170 /* vecmath.h */,
 			);
-			name = Source;
+			name = crf;
 			sourceTree = "<group>";
 		};
-		3702222814C50EFA00052F88 /* Products */ = {
+		3745F26A14C8A7D800007C3C /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				3702222F14C50EFA00052F88 /* liblbfgs-1.1.0.dylib */,
+				379B8E8014C52A6100797170 /* cqdb */,
+				3745F26914C8A7BA00007C3C /* crf */,
 			);
-			name = Products;
+			name = lib;
+			sourceTree = "<group>";
+		};
+		3745F26B14C8A7E000007C3C /* frontend */ = {
+			isa = PBXGroup;
+			children = (
+				3745F26C14C8A80000007C3C /* dump.c */,
+				3745F26D14C8A80000007C3C /* iwa.c */,
+				3745F26E14C8A80000007C3C /* iwa.h */,
+				3745F26F14C8A80000007C3C /* learn.c */,
+				3745F27014C8A80000007C3C /* main.c */,
+				3745F27114C8A80000007C3C /* option.c */,
+				3745F27214C8A80000007C3C /* option.h */,
+				3745F27314C8A80000007C3C /* readdata.h */,
+				3745F27414C8A80000007C3C /* reader.c */,
+				3745F27514C8A80000007C3C /* tag.c */,
+			);
+			name = frontend;
 			sourceTree = "<group>";
 		};
 		379B8E8014C52A6100797170 /* cqdb */ = {
@@ -206,6 +299,9 @@
 				379B8E7914C5299200797170 /* rumavl.h in Headers */,
 				379B8E7F14C5299200797170 /* vecmath.h in Headers */,
 				379B8E8814C52A7000797170 /* cqdb.h in Headers */,
+				3745F27814C8A80000007C3C /* iwa.h in Headers */,
+				3745F27C14C8A80000007C3C /* option.h in Headers */,
+				3745F27D14C8A80000007C3C /* readdata.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -230,6 +326,24 @@
 			productName = crfsuite;
 			productReference = 3702222014C50EEA00052F88 /* libcrfsuite-0.12.dylib */;
 			productType = "com.apple.product-type.library.dynamic";
+		};
+		3745F28314C8A8C400007C3C /* frontend */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3745F28B14C8A8C400007C3C /* Build configuration list for PBXNativeTarget "frontend" */;
+			buildPhases = (
+				3745F28014C8A8C400007C3C /* Sources */,
+				3745F28114C8A8C400007C3C /* Frameworks */,
+				3745F28214C8A8C400007C3C /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3745F28F14C8A8D400007C3C /* PBXTargetDependency */,
+			);
+			name = frontend;
+			productName = crfsuite;
+			productReference = 3745F28414C8A8C400007C3C /* crfsuite */;
+			productType = "com.apple.product-type.tool";
 		};
 /* End PBXNativeTarget section */
 
@@ -258,15 +372,16 @@
 			projectRoot = "";
 			targets = (
 				3702221F14C50EEA00052F88 /* crfsuite */,
+				3745F28314C8A8C400007C3C /* frontend */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		3702222F14C50EFA00052F88 /* liblbfgs-1.1.0.dylib */ = {
+		3702222F14C50EFA00052F88 /* liblbfgs-1.10.dylib */ = {
 			isa = PBXReferenceProxy;
 			fileType = "compiled.mach-o.dylib";
-			path = "liblbfgs-1.1.0.dylib";
+			path = "liblbfgs-1.10.dylib";
 			remoteRef = 3702222E14C50EFA00052F88 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
@@ -316,12 +431,38 @@
 				379B8E7E14C5299200797170 /* train_passive_aggressive.c in Sources */,
 				379B8E8414C52A6800797170 /* cqdb.c in Sources */,
 				379B8E8514C52A6800797170 /* lookup3.c in Sources */,
+				3745F27614C8A80000007C3C /* dump.c in Sources */,
+				3745F27714C8A80000007C3C /* iwa.c in Sources */,
+				3745F27914C8A80000007C3C /* learn.c in Sources */,
+				3745F27A14C8A80000007C3C /* main.c in Sources */,
+				3745F27B14C8A80000007C3C /* option.c in Sources */,
+				3745F27E14C8A80000007C3C /* reader.c in Sources */,
+				3745F27F14C8A80000007C3C /* tag.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3745F28014C8A8C400007C3C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3745F29014C8A8DA00007C3C /* dump.c in Sources */,
+				3745F29114C8A8DA00007C3C /* iwa.c in Sources */,
+				3745F29314C8A8DA00007C3C /* learn.c in Sources */,
+				3745F29414C8A8DA00007C3C /* main.c in Sources */,
+				3745F29514C8A8DA00007C3C /* option.c in Sources */,
+				3745F29814C8A8DA00007C3C /* reader.c in Sources */,
+				3745F29914C8A8DA00007C3C /* tag.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		3745F28F14C8A8D400007C3C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3702221F14C50EEA00052F88 /* crfsuite */;
+			targetProxy = 3745F28E14C8A8D400007C3C /* PBXContainerItemProxy */;
+		};
 		379B8E3F14C50FB300797170 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = lbfgs;
@@ -397,6 +538,55 @@
 			};
 			name = Release;
 		};
+		3745F28C14C8A8C400007C3C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$SRCROOT/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = crfsuite;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		3745F28D14C8A8C400007C3C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$SRCROOT/include\"";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_NAME = crfsuite;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -414,6 +604,15 @@
 			buildConfigurations = (
 				3702222214C50EEA00052F88 /* Debug */,
 				3702222314C50EEA00052F88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3745F28B14C8A8C400007C3C /* Build configuration list for PBXNativeTarget "frontend" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3745F28C14C8A8C400007C3C /* Debug */,
+				3745F28D14C8A8C400007C3C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
