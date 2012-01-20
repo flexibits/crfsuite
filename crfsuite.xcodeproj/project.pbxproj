@@ -28,9 +28,9 @@
 		3745F29B14C8A8E700007C3C /* liblbfgs-1.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs-1.10.dylib */; };
 		379B8E4014C50FB600797170 /* liblbfgs-1.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs-1.10.dylib */; };
 		379B8E4314C5292C00797170 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4214C5292C00797170 /* config.h */; };
-		379B8E4814C5296B00797170 /* crfsuite_api.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4414C5296B00797170 /* crfsuite_api.hpp */; };
-		379B8E4914C5296B00797170 /* crfsuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4514C5296B00797170 /* crfsuite.h */; };
-		379B8E4A14C5296B00797170 /* crfsuite.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4614C5296B00797170 /* crfsuite.hpp */; };
+		379B8E4814C5296B00797170 /* crfsuite_api.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4414C5296B00797170 /* crfsuite_api.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
+		379B8E4914C5296B00797170 /* crfsuite.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4514C5296B00797170 /* crfsuite.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		379B8E4A14C5296B00797170 /* crfsuite.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4614C5296B00797170 /* crfsuite.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
 		379B8E4B14C5296B00797170 /* os.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4714C5296B00797170 /* os.h */; };
 		379B8E6614C5299200797170 /* crf1d_context.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E4C14C5299200797170 /* crf1d_context.c */; };
 		379B8E6714C5299200797170 /* crf1d_encode.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E4D14C5299200797170 /* crf1d_encode.c */; };
@@ -61,6 +61,8 @@
 		379B8E8414C52A6800797170 /* cqdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E8114C52A6800797170 /* cqdb.c */; };
 		379B8E8514C52A6800797170 /* lookup3.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E8214C52A6800797170 /* lookup3.c */; };
 		379B8E8814C52A7000797170 /* cqdb.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E8714C52A7000797170 /* cqdb.h */; };
+		37E4E1F914C8D997009D2F98 /* lbfgs.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E4E1F814C8D997009D2F98 /* lbfgs.h */; };
+		37E4E37114C8E623009D2F98 /* liblbfgs-1.10.dylib in Copy liblbgfs */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs-1.10.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -88,14 +90,16 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		3745F28214C8A8C400007C3C /* CopyFiles */ = {
+		37E4E37014C8E618009D2F98 /* Copy liblbgfs */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
-			dstPath = /usr/share/man/man1/;
-			dstSubfolderSpec = 0;
+			dstPath = "";
+			dstSubfolderSpec = 16;
 			files = (
+				37E4E37114C8E623009D2F98 /* liblbfgs-1.10.dylib in Copy liblbgfs */,
 			);
-			runOnlyForDeploymentPostprocessing = 1;
+			name = "Copy liblbgfs";
+			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
@@ -147,6 +151,7 @@
 		379B8E8114C52A6800797170 /* cqdb.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cqdb.c; path = lib/cqdb/src/cqdb.c; sourceTree = "<group>"; };
 		379B8E8214C52A6800797170 /* lookup3.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lookup3.c; path = lib/cqdb/src/lookup3.c; sourceTree = "<group>"; };
 		379B8E8714C52A7000797170 /* cqdb.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cqdb.h; path = lib/cqdb/include/cqdb.h; sourceTree = "<group>"; };
+		37E4E1F814C8D997009D2F98 /* lbfgs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = lbfgs.h; path = ../liblbfgs/include/lbfgs.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +180,7 @@
 			children = (
 				3702222714C50EFA00052F88 /* liblbfgs.xcodeproj */,
 				3702222614C50EF100052F88 /* Source */,
+				37E4E1F814C8D997009D2F98 /* lbfgs.h */,
 				3702222114C50EEA00052F88 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -286,10 +292,10 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				379B8E4314C5292C00797170 /* config.h in Headers */,
 				379B8E4814C5296B00797170 /* crfsuite_api.hpp in Headers */,
-				379B8E4914C5296B00797170 /* crfsuite.h in Headers */,
 				379B8E4A14C5296B00797170 /* crfsuite.hpp in Headers */,
+				379B8E4914C5296B00797170 /* crfsuite.h in Headers */,
+				379B8E4314C5292C00797170 /* config.h in Headers */,
 				379B8E4B14C5296B00797170 /* os.h in Headers */,
 				379B8E6B14C5299200797170 /* crf1d.h in Headers */,
 				379B8E6C14C5299200797170 /* crfsuite_internal.h in Headers */,
@@ -302,6 +308,7 @@
 				3745F27814C8A80000007C3C /* iwa.h in Headers */,
 				3745F27C14C8A80000007C3C /* option.h in Headers */,
 				3745F27D14C8A80000007C3C /* readdata.h in Headers */,
+				37E4E1F914C8D997009D2F98 /* lbfgs.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +340,7 @@
 			buildPhases = (
 				3745F28014C8A8C400007C3C /* Sources */,
 				3745F28114C8A8C400007C3C /* Frameworks */,
-				3745F28214C8A8C400007C3C /* CopyFiles */,
+				37E4E37014C8E618009D2F98 /* Copy liblbgfs */,
 			);
 			buildRules = (
 			);
@@ -506,6 +513,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$BUILT_PRODUCTS_DIR/usr/local/include\"";
 				INSTALL_PATH = "@loader_path";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -531,6 +539,7 @@
 				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "\"$BUILT_PRODUCTS_DIR/usr/local/include\"";
 				INSTALL_PATH = "@loader_path";
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				PRODUCT_NAME = "$(TARGET_NAME)-0.12";
