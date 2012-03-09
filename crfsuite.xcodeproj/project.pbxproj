@@ -25,7 +25,6 @@
 		3745F29814C8A8DA00007C3C /* reader.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F27414C8A80000007C3C /* reader.c */; };
 		3745F29914C8A8DA00007C3C /* tag.c in Sources */ = {isa = PBXBuildFile; fileRef = 3745F27514C8A80000007C3C /* tag.c */; };
 		3745F29A14C8A8E300007C3C /* libcrfsuite-0.12.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222014C50EEA00052F88 /* libcrfsuite-0.12.dylib */; };
-		3745F29B14C8A8E700007C3C /* liblbfgs-1.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs-1.10.dylib */; };
 		379B8E4014C50FB600797170 /* liblbfgs-1.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs-1.10.dylib */; };
 		379B8E4314C5292C00797170 /* config.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4214C5292C00797170 /* config.h */; };
 		379B8E4814C5296B00797170 /* crfsuite_api.hpp in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E4414C5296B00797170 /* crfsuite_api.hpp */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -61,8 +60,8 @@
 		379B8E8414C52A6800797170 /* cqdb.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E8114C52A6800797170 /* cqdb.c */; };
 		379B8E8514C52A6800797170 /* lookup3.c in Sources */ = {isa = PBXBuildFile; fileRef = 379B8E8214C52A6800797170 /* lookup3.c */; };
 		379B8E8814C52A7000797170 /* cqdb.h in Headers */ = {isa = PBXBuildFile; fileRef = 379B8E8714C52A7000797170 /* cqdb.h */; };
+		37CE283A1508151B0083B1AA /* liblbfgs-1.10.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs-1.10.dylib */; };
 		37E4E1F914C8D997009D2F98 /* lbfgs.h in Headers */ = {isa = PBXBuildFile; fileRef = 37E4E1F814C8D997009D2F98 /* lbfgs.h */; };
-		37E4E37114C8E623009D2F98 /* liblbfgs-1.10.dylib in Copy liblbgfs */ = {isa = PBXBuildFile; fileRef = 3702222F14C50EFA00052F88 /* liblbfgs-1.10.dylib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -73,35 +72,21 @@
 			remoteGlobalIDString = 370221FA14C504FF00052F88;
 			remoteInfo = lbfgs;
 		};
-		3745F28E14C8A8D400007C3C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 3702221214C50ECF00052F88 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 3702221F14C50EEA00052F88;
-			remoteInfo = libcrfsuite;
-		};
-		379B8E3E14C50FB300797170 /* PBXContainerItemProxy */ = {
+		37CE2834150814FA0083B1AA /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 3702222714C50EFA00052F88 /* liblbfgs.xcodeproj */;
 			proxyType = 1;
 			remoteGlobalIDString = 370221F914C504FF00052F88;
 			remoteInfo = lbfgs;
 		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		37E4E37014C8E618009D2F98 /* Copy liblbgfs */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 16;
-			files = (
-				37E4E37114C8E623009D2F98 /* liblbfgs-1.10.dylib in Copy liblbgfs */,
-			);
-			name = "Copy liblbgfs";
-			runOnlyForDeploymentPostprocessing = 0;
+		37CE2836150815020083B1AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3702221214C50ECF00052F88 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3702221F14C50EEA00052F88;
+			remoteInfo = crfsuite;
 		};
-/* End PBXCopyFilesBuildPhase section */
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3702222014C50EEA00052F88 /* libcrfsuite-0.12.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = "libcrfsuite-0.12.dylib"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -168,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3745F29A14C8A8E300007C3C /* libcrfsuite-0.12.dylib in Frameworks */,
-				3745F29B14C8A8E700007C3C /* liblbfgs-1.10.dylib in Frameworks */,
+				37CE283A1508151B0083B1AA /* liblbfgs-1.10.dylib in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,7 +312,7 @@
 			buildRules = (
 			);
 			dependencies = (
-				379B8E3F14C50FB300797170 /* PBXTargetDependency */,
+				37CE2835150814FA0083B1AA /* PBXTargetDependency */,
 			);
 			name = crfsuite;
 			productName = crfsuite;
@@ -340,12 +325,12 @@
 			buildPhases = (
 				3745F28014C8A8C400007C3C /* Sources */,
 				3745F28114C8A8C400007C3C /* Frameworks */,
-				37E4E37014C8E618009D2F98 /* Copy liblbgfs */,
+				37CE283F150816020083B1AA /* Copy liblbfgs */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				3745F28F14C8A8D400007C3C /* PBXTargetDependency */,
+				37CE2837150815020083B1AA /* PBXTargetDependency */,
 			);
 			name = frontend;
 			productName = crfsuite;
@@ -407,7 +392,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "if [ ! -f configure ]; then \n  sh \"$SRCROOT\"/autogen.sh > /dev/null 2>&1\nfi \n\nif [ ! -f \"$SRCROOT\"/config.h ]; then\n  CFLAGS='-L$TARGET_BUILD_DIR' \"$SRCROOT\"/configure\nfi";
+			shellScript = "#autoconf/automake/libtool need to be installed\nPATH=$PATH:/usr/local/bin\n\nif [ ! -f \"$SRCROOT\"/configure ]; then \n  sh \"$SRCROOT\"/autogen.sh > /dev/null 2>&1\nfi \n\nif [ ! -f \"$SRCROOT\"/config.h ]; then\n  CFLAGS='-L$TARGET_BUILD_DIR' \"$SRCROOT\"/configure\nfi";
+			showEnvVarsInLog = 0;
+		};
+		37CE283F150816020083B1AA /* Copy liblbfgs */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy liblbfgs";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#Using a copy files phase causes Xcode to try to copy liblbfgs onto itself and fail in some cases\nif [ -f \"$SRCROOT\"/../liblbfgs/build/$CONFIGURATION/liblbfgs-1.10.dylib ]; then\n  cp \"$SRCROOT\"/../liblbfgs/build/$CONFIGURATION/liblbfgs-1.10.dylib \"$CONFIGURATION_BUILD_DIR\"\nfi";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -465,15 +465,15 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		3745F28F14C8A8D400007C3C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 3702221F14C50EEA00052F88 /* crfsuite */;
-			targetProxy = 3745F28E14C8A8D400007C3C /* PBXContainerItemProxy */;
-		};
-		379B8E3F14C50FB300797170 /* PBXTargetDependency */ = {
+		37CE2835150814FA0083B1AA /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = lbfgs;
-			targetProxy = 379B8E3E14C50FB300797170 /* PBXContainerItemProxy */;
+			targetProxy = 37CE2834150814FA0083B1AA /* PBXContainerItemProxy */;
+		};
+		37CE2837150815020083B1AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3702221F14C50EEA00052F88 /* crfsuite */;
+			targetProxy = 37CE2836150815020083B1AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
